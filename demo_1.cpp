@@ -1,8 +1,8 @@
 #include <iostream>
 using namespace std;
 int main(){
-    cout<<"demo1";
-    cout<<"demo2";
+    
+    cout<<"1";
     return 0;
 }
 
