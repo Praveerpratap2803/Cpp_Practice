@@ -47,19 +47,87 @@
 // }
 
 
+// #include<iostream>
+// using namespace std;
+// int main(){
+
+//     int x,n,power=1;
+//     cin>>x>>n;
+//     while(n>0){
+//         power=x*power;
+//         n--;
+//     }
+//     cout<<power;
+//     return 0;
+// }
+
+
+//Pattern Assignment
+// n=4
+// 1
+// 23
+// 345
+// 4567
+
+// #include<iostream>
+// using namespace std;
+// int main(){
+
+//     int n;
+//     cin>>n;
+//     int i=1,count=1;
+//     while(i<=n){
+//         int j=1;
+//         while(j<=i){
+//             cout<<count++;
+//             j++;
+//         }
+//         count=i;
+//         i++;
+//         cout<<endl;
+//     }
+//     return 0;
+// }
+
+
+
+//Pattern Assignment
+// n=4
+//    1
+//   23
+//  345
+// 4567
+
 #include<iostream>
 using namespace std;
 int main(){
 
-    int x,n,power=1;
-    cin>>x>>n;
-    while(n>0){
-        power=x*power;
-        n--;
+    int n;
+    cin>>n;
+    int i=1,count=1;
+    while(i<=n){
+        int j=1;
+        int k=1;
+        while(k<=(n-i)){
+            cout<<" ";
+            k++;
+        }
+        while(j<=i){
+           
+            cout<<count++;
+            j++;
+        }
+        count=i;
+        i++;
+        cout<<endl;
     }
-    cout<<power;
     return 0;
 }
+
+
+
+
+
 
 
 
