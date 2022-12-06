@@ -39,7 +39,11 @@ int main(){
     //     }
     // }
     
-    cout<<arr[index];
+    // cout<<arr[index];
+
+
+    // int array[5]={1,3,6,2,5,4};
+
     
 
     return 0;
