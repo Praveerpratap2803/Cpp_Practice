@@ -1,4 +1,4 @@
-while(j<=(n-i)){
+// while(j<=(n-i)){
             //     cout<<" ";
             //     j++;
             // }
