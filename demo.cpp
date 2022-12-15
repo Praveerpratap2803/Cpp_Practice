@@ -237,3 +237,80 @@
 // }
 
 
+
+
+
+
+// #include <bits/stdc++.h>
+
+
+
+// template <class T>
+// class Stack {
+// private:
+//   vector<T> data;
+// public:
+//   void push(const T &item) {data.push_back(item);}
+//   T pop(void) {return data.pop_back();}
+// };
+
+// #include<bits/stdc++.h>
+// using namespace std;
+
+// int main(){
+
+//   // int i=10;
+//   // // cout<<&i<<endl;
+//   // int *p;
+//   // (*p)++;
+//   // // cout<<*p;
+//   // int a[10]={1,2,3};
+//   // cout<<*(a+1);
+
+//   // int a=10;
+//   // int &b=a;
+//   // b++;
+//   // cout<<a;
+
+//   // int *p = new int;// new keyword is used to store the memory in heap // stack - 4or 8 byte memory and 4byte for int
+//   // *p=10;
+//   // cout<<*p;
+//   // int n;
+//   // cin>>n;
+//   // int *q=new int[n];
+//   // *q=1;
+//   // delete []q;
+//   // cout<<*q;
+
+//   const int i=10;
+//   int const j=9;
+
+//   return 0;
+// }
+// Classes all the data are private by default but in structure all are public
+#include<iostream>
+#include<bits/stdc++.h>
+using namespace std;
+
+class Complex{
+  int a,b;
+  public:
+    void sum(){
+      cout<<a+b;
+    }
+};
+
+int main(){
+
+  Complex c1;
+  Complex *c2=new Complex;
+  // c1.sum();
+
+  return 0;
+}
+
+
+
+
+
+
