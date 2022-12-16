@@ -288,28 +288,111 @@
 //   return 0;
 // }
 // Classes all the data are private by default but in structure all are public
+
+/*
 #include<iostream>
 #include<bits/stdc++.h>
 using namespace std;
 
 class Complex{
-  int a,b;
   public:
+    int a,b;
     void sum(){
       cout<<a+b;
+    }
+    void setter(int a){
+      (*this).a=a;
+      this->a=a;
+    }
+    //You can make multiple constructor but only one destructure
+    Complex(int c){
+      cout<<"Constructor called"<<c;
+    }
+    Complex(){
+      cout<<"Constructor called";
+    }
+    ~Complex(){
+      cout<<"Constructor called";
     }
 };
 
 int main(){
 
-  Complex c1;
-  Complex *c2=new Complex;
+  Complex c1(10);
+  c1.a=2;
+  Complex *c2=new Complex(11);
+  (*c2).a=4;//c2->a=3;//arrow is used mnmmmmm
+  c2->setter(10);
+  
   // c1.sum();
 
   return 0;
 }
+*/
+
+// #include<iostream>
+// #include<bits/stdc++.h>
+// using namespace std;
+// void swap(int *a,int *b){
+//   int temp = *a;
+//   *a=*b;
+//   *b=temp;
+// }
+// // void swap(int &a,int &b){
+// //   int temp = a;
+// //   a=b;
+// //   b=temp;
+// // }
+// int main(){
+
+//   int a=1,b=2;
+//   swap(a,b);
+//   cout<<a<<b;
+//   return 0;
+// }
 
 
+
+#include<iostream>
+#include<bits/stdc++.h>
+using namespace std;
+class Principal{
+
+};
+class Teacher:Principal{//by default private modifier
+  protected:
+  int a=10;
+  public:
+  virtual void f1(){
+    cout<<"Class Teacher f1 called";
+  }
+  void f1(int a){
+    cout<<"Class Teacher f1 called";
+  }
+
+};
+class Student:public Teacher,public Principal{
+  
+
+public:
+  void f1(){
+    cout<<"Class Student f1 called"<<a;
+  }
+
+
+};
+int main(){
+  int a=10;
+  Student s1,*s2;
+  // s1.f1();
+  Teacher t1,*t2;
+  t2=&s1;
+  s2=&s1;
+  t2->f1();
+
+
+  return 0;
+}
 
 
 
