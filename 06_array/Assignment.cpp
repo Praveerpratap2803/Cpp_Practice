@@ -44,6 +44,24 @@ int main(){
 
     // int array[5]={1,3,6,2,5,4};
 
+    //Pair Sum    
+
+    //Triplet Sum
+    // int a[]={1,2,3,4,5,6,7},b=12,count=0;
+    // for(int i=0;i<7;i++){
+    //     for(int j=0;j<7,j!=i;j++){
+    //         for(int k=0;k<7,k!=i,k!=j;k++){
+    //             if(a[i]+a[j]+a[k]==b){
+    //                 cout<<a[i]<<a[j]<<a[k]<<endl;
+    //                 count++;
+    //             }
+    //         }
+    //     }
+    // }
+    // cout<<count;
+
+    //Sort 0 1
+    
     
 
     return 0;
