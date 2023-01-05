@@ -353,47 +353,66 @@ int main(){
 
 
 
-#include<iostream>
-#include<bits/stdc++.h>
-using namespace std;
-class Principal{
+// #include<iostream>
+// #include<bits/stdc++.h>
+// using namespace std;
+// class Principal{
 
-};
-class Teacher:Principal{//by default private modifier
-  protected:
-  int a=10;
-  public:
-  virtual void f1(){
-    cout<<"Class Teacher f1 called";
-  }
-  void f1(int a){
-    cout<<"Class Teacher f1 called";
-  }
+// };
+// class Teacher:Principal{//by default private modifier
+//   protected:
+//   int a=10;
+//   public:
+//   virtual void f1(){
+//     cout<<"Class Teacher f1 called";
+//   }
+//   void f1(int a){
+//     cout<<"Class Teacher f1 called";
+//   }
 
-};
-class Student:public Teacher,public Principal{
+// };
+// class Student:public Teacher,public Principal{
   
 
-public:
-  void f1(){
-    cout<<"Class Student f1 called"<<a;
+// public:
+//   void f1(){
+//     cout<<"Class Student f1 called"<<a;
+//   }
+
+
+// };
+// int main(){
+//   int a=10;
+//   Student s1,*s2;
+//   // s1.f1();
+//   Teacher t1,*t2;
+//   t2=&s1;
+//   s2=&s1;
+//   t2->f1();
+
+
+//   return 0;
+// }
+
+
+#include<iostream>
+using namespace std;
+class Vehicle{
+  public:
+  int accelator=10;
+  int brake;
+};
+class Car: public Vehicle{
+  public:
+  void a(){
+    cout<<"abc"<<accelator;
   }
-
-
 };
 int main(){
-  int a=10;
-  Student s1,*s2;
-  // s1.f1();
-  Teacher t1,*t2;
-  t2=&s1;
-  s2=&s1;
-  t2->f1();
+
+  Car c1;
+  c1.a();
 
 
-  return 0;
 }
-
-
-
 
